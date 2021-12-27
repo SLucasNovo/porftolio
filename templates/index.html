@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Get to know Sandro</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+{% block styles %}
+        <!-- Favicon -->
+        <link href="static/img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+    </head>
+{% endblock %}
+
+
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51" class="body-content">
+{% block navbar %}
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Sandro</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto float-right d-flex">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Courses</a></li>
+                        <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <p>I'm</p>
+                                <h1>Sandro Novo</h1>
+                                <h2></h2>
+                                <div class="typed-text">Data Analyst, Experienced Financial Auditor, Python Developer, SQL expertise, Data Visualist with PowerBI</div>
+                            </div>
+                            <div class="hero-btn">
+                                <a class="btn" href="mailto:sandrolucasnovo91@gmail.com">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image">
+                            <img src="static/images/Me-test.png" alt="Hero Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+{% include "about.html" %}
+
+{% include "experience.html" %}
+
+{% include "portfolio.html" %}
+
+{% include "courses.html" %}
+
+{% include "footer.html" %}
+        
+        
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+{% include "jsscripts.html" %}
+{% endblock %}
+    </body>
+
+</html>

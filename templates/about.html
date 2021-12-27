@@ -1,0 +1,57 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block content %}
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+<!--                    <div class="col-lg-6">-->
+<!--                        <div class="about-img">-->
+<!--                            <img src="static/img/about.jpg" alt="Image">-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Learn About Me</p>
+                                <h2>6 Years Experience</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    I combine 5 years of experience as a Financial Auditor and one year of experience as a Data Analyst
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p>Financial Data Analysis</p><p>95%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>SQL Developing  </p><p>85%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Python Developing</p><p>75%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Data visualization with PowerBI</p><p>75%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <a class="btn" href="{{url_for('send_cv')}}">Learn More (CV)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+{% endblock %}
